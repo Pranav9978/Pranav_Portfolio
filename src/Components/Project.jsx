@@ -2,7 +2,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "./Project.css";
 import Dashboard from "../assets/Dashbord1.png";
 import WeatherApp from "../assets/WeatherApp.png";
-
+import passwordapp from "../assets/Password.png";
 function Projects() {
   return (
     <div className="projects-section" id="projects">
@@ -29,10 +29,12 @@ function Projects() {
                 <Col md={7}>
                   <Card.Body>
                     <Card.Title className="pname">
-                      <h4><b>StockMaster</b></h4> - Product Inventory Management System
+                      <h4>
+                        <b>StockMaster</b>
+                      </h4>{" "}
                     </Card.Title>
                     <Card.Text className="pinfo">
-                      StockMaster is a comprehensive Product Inventory
+                      StockMaster is a comprehensive <b>Product Inventory  Management System</b> designed to simplify how businesses
                       Management System designed to simplify how businesses
                       track and manage their stock. With StockMaster, you can
                       efficiently add, update, and delete products, monitor
@@ -75,17 +77,19 @@ function Projects() {
                   <Col md={7}>
                     <Card.Body>
                       <Card.Title className="pname">
-                        <h4><b>Weather App</b></h4>
+                        <h4>
+                          <b>Weather App</b>
+                        </h4>
                       </Card.Title>
                       <Card.Text className="pinfo">
-                        Built a fully responsive<b> Weather Application</b> using React
-                        (Vite) that provides real-time weather information based
-                        on the user’s current location or searched city. The app
-                        integrates the OpenWeather API to display temperature,
-                        weather conditions, humidity, and wind speed. Key
-                        features include automatic geolocation detection, city
-                        search with validation, dark/light mode toggle with
-                        local storage persistence, and an attractive
+                        Built a fully responsive<b> Weather Application</b>{" "}
+                        using React (Vite) that provides real-time weather
+                        information based on the user’s current location or
+                        searched city. The app integrates the OpenWeather API to
+                        display temperature, weather conditions, humidity, and
+                        wind speed. Key features include automatic geolocation
+                        detection, city search with validation, dark/light mode
+                        toggle with local storage persistence, and an attractive
                         glassmorphism-based UI. The project follows modern React
                         best practices, includes proper error handling, and is
                         optimized for mobile and desktop devices.
@@ -105,6 +109,50 @@ function Projects() {
             </Col>
           </Row>
         }
+        <br />
+        <Row>
+          <Col>
+            <Card className="project-card shadow-lg">
+              <Row className="g-0">
+                <Col md={5}>
+                  <Card.Img
+                    src={passwordapp}
+                    alt="Project 2"
+                    className="project-img"
+                  />
+                </Col>
+
+                <Col md={7}>
+                  <Card.Body>
+                    <Card.Title className="pname">
+                      <h4>
+                        <b>Password Generator App</b>
+                      </h4>
+                    </Card.Title>
+                    <Card.Text className="pinfo">
+                      <b>Password Generator App</b> built using React that allows users
+                      to generate secure and customizable passwords. The
+                      application supports adjustable password length, inclusion
+                      of uppercase and lowercase letters, numbers, and special
+                      symbols. It features a Dark/Light mode toggle,
+                      copy-to-clipboard functionality with Toast notifications,
+                      and a fully responsive UI. Designed with modern UX
+                      principles and deployed on Vercel for production use.
+                    </Card.Text>
+                    <Button
+                      style={{ backgroundColor: "#00e0ff" }}
+                      className="btn-custom"
+                      href="https://password-generator-app-steel-two.vercel.app/"
+                      target="_blank"
+                    >
+                      View Project
+                    </Button>
+                  </Card.Body>
+                </Col>
+              </Row>
+            </Card>
+          </Col>
+        </Row>
       </Container>
     </div>
   );
