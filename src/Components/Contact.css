@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.blue {
+  color: #00e0ff;
+}
+
+.contact-section {
+  background-color: #626c7d;
+  /* background: linear-gradient(290deg,#2c2c2c, #585858,#bdbdbd); */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 15px; /* reduce padding for smaller screens */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 600px; /* prevent card from stretching too wide */
+  width: 100%;      /* make it adapt to screen size */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card .form-control {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+}
+
+.contact-card .form-control:focus {
+  box-shadow: 0 0 5px black;
+}
+
+/* Button styling */
+.contact-card .btn-custom {
+  background-color: black;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+  color: white;
+  display: block;        /* make it block-level */
+  margin: 20px auto 0;   /* center button automatically */
+  max-width: 200px;      /* limit button size */
+  width: 100%;           /* allow responsiveness */
+}
+
+.contact-card .btn-custom:hover {
+  background-color: white;
+  transform: scale(1.05); /* fixed scaling issue */
+  color: black;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 15px;
+  }
+
+  .contact-card .btn-custom {
+    font-size: 0.9rem;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 10px;
+  }
+
+  .contact-card .btn-custom {
+    font-size: 0.85rem;
+    max-width: 160px;
+  }
+}

@@ -1,0 +1,53 @@
+.readmore-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.readmore-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #11172A;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00b4d8;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  background: #fff;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #00b4d8;
+  transition: 0.3s;
+}
+
+.section ul li:hover {
+  background: #e9faff;
+  transform: translateX(5px);
+}

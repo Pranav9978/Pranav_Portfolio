@@ -1,0 +1,88 @@
+.footer {
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;              /* put logo + brand name in one row */
+  align-items: center;        /* vertically center them */
+  gap: 0.1rem;                  /* space between logo and text */
+}
+
+.brand-logo {
+  width: 115px;                /* adjust size */
+  height: 115px;
+  object-fit: contain;
+  margin-left: 1rem;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00e0ff;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 10px; /* space between social links and contact */
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.social-links a {
+  color: #00e0ff;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column; 
+  gap: 6px; 
+  align-items: flex-end; 
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px; /* spacing between icon and text */
+}
+.contact-info .phone-number{
+  margin-right: 4rem;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .contact-info {
+    align-items: center; /* center on small screens */
+    text-align: center;
+  }
+}
