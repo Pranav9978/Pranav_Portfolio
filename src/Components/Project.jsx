@@ -3,6 +3,7 @@ import "./Project.css";
 import Dashboard from "../assets/Dashbord1.png";
 import WeatherApp from "../assets/WeatherApp.png";
 import passwordapp from "../assets/Password.png";
+import authcraft from "../assets/login.png";
 function Projects() {
   return (
     <div className="projects-section" id="projects">
@@ -34,15 +35,17 @@ function Projects() {
                       </h4>{" "}
                     </Card.Title>
                     <Card.Text className="pinfo">
-                      StockMaster is a comprehensive <b>Product Inventory  Management System</b> designed to simplify how businesses
-                      Management System designed to simplify how businesses
-                      track and manage their stock. With StockMaster, you can
-                      efficiently add, update, and delete products, monitor
-                      total stock, pending orders, and stock availability, and
-                      maintain a clear overview of your inventory. Perfect for
-                      small businesses, retail shops, or warehouses, StockMaster
-                      ensures your inventory is always organized, accurate, and
-                      up-to-date, saving time and preventing stock errors.
+                      StockMaster is a comprehensive{" "}
+                      <b>Product Inventory Management System</b> designed to
+                      simplify how businesses Management System designed to
+                      simplify how businesses track and manage their stock. With
+                      StockMaster, you can efficiently add, update, and delete
+                      products, monitor total stock, pending orders, and stock
+                      availability, and maintain a clear overview of your
+                      inventory. Perfect for small businesses, retail shops, or
+                      warehouses, StockMaster ensures your inventory is always
+                      organized, accurate, and up-to-date, saving time and
+                      preventing stock errors.
                     </Card.Text>
                     <Button
                       style={{ backgroundColor: "#00e0ff" }}
@@ -130,14 +133,15 @@ function Projects() {
                       </h4>
                     </Card.Title>
                     <Card.Text className="pinfo">
-                      <b>Password Generator App</b> built using React that allows users
-                      to generate secure and customizable passwords. The
-                      application supports adjustable password length, inclusion
-                      of uppercase and lowercase letters, numbers, and special
-                      symbols. It features a Dark/Light mode toggle,
-                      copy-to-clipboard functionality with Toast notifications,
-                      and a fully responsive UI. Designed with modern UX
-                      principles and deployed on Vercel for production use.
+                      <b>Password Generator App</b> built using React that
+                      allows users to generate secure and customizable
+                      passwords. The application supports adjustable password
+                      length, inclusion of uppercase and lowercase letters,
+                      numbers, and special symbols. It features a Dark/Light
+                      mode toggle, copy-to-clipboard functionality with Toast
+                      notifications, and a fully responsive UI. Designed with
+                      modern UX principles and deployed on Vercel for production
+                      use.
                     </Card.Text>
                     <Button
                       style={{ backgroundColor: "#00e0ff" }}
@@ -153,6 +157,54 @@ function Projects() {
             </Card>
           </Col>
         </Row>
+
+        <br />
+        <Row>
+          <Col>
+            <Card className="project-card shadow-lg">
+              <Row className="g-0">
+                <Col md={5}>
+                  <Card.Img
+                    src={authcraft}
+                    alt="Project 2"
+                    className="project-img"
+                  />
+                </Col>
+
+                <Col md={7}>
+                  <Card.Body>
+                    <Card.Title className="pname">
+                      <h4>
+                        <b>Login & Registration System</b>
+                      </h4>
+                    </Card.Title>
+                    <Card.Text className="pinfo">
+                      React <b>Login & Registration System</b> is a fully responsive
+                      authentication UI built with React.js. The application
+                      allows users to register using a username, email, and
+                      password, storing data dynamically in JavaScript (JSON
+                      format). It includes dark/light theme switching, clean UI
+                      design, and mobile-friendly responsiveness. This project
+                      highlights my ability to build user-centric interfaces,
+                      manage application state using React Hooks, and implement
+                      modern UI/UX principles.
+                    </Card.Text>
+                    <Button
+                      style={{ backgroundColor: "#00e0ff" }}
+                      className="btn-custom"
+                      href="https://form-validation-tau-six.vercel.app/"
+                      target="_blank"
+                    >
+                      View Project
+                    </Button>
+                  </Card.Body>
+                </Col>
+              </Row>
+            </Card>
+          </Col>
+        </Row>
+
+        <br />
       </Container>
     </div>
   );
